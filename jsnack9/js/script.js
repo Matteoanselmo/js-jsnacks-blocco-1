@@ -5,15 +5,15 @@
  */
 
 
-const randomArray = [Math.floor(Math.random() * 100) , Math.floor(Math.random() * 100) , Math.floor(Math.random() * 100)];
-console.log(randomArray);
-
+const randomArray = [];
 let somma = 0;
 
-
-for(let i = 0; i < randomArray.length; i++){
+for(let i = 0; i <10; i++){
+    randomArray.push(Math.floor(Math.random() * 100));
     somma += randomArray[i]; 
-};
+}
+
+console.log(randomArray);
 
 let media = parseInt(somma / randomArray.length);
 
